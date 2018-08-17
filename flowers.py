@@ -1,0 +1,38 @@
+import turtle
+import time
+turtle.bgcolor("black")
+turtle.up()
+turtle.goto(0,200)
+turtle.down()
+turtle.speed(400)
+turtle.pensize(3)
+sides = 6
+colors = ("red", "yellow", "blue", "orange", "green", "purple")
+for x in range(100):
+    turtle.pencolor(colors[x%sides])
+    turtle.forward(x * 3/sides + x)
+    turtle.left(360/sides + 1)
+    turtle.width(x*sides/200)
+turtle.right(150)
+turtle.up()
+turtle.goto(0,200)
+turtle.left(100)
+turtle.down()
+for i in range(200):
+    turtle.color("red")
+    turtle.fd(2)
+    turtle.right(0.1)
+turtle.begin_fill()
+turtle.right(90)
+turtle.fd(-100)
+for i in range(4):
+	turtle.fd(200)
+	turtle.left(90)
+turtle.fillcolor("grey")
+turtle.end_fill()
+turtle.up()
+turtle.goto(300,-300)
+turtle.down()
+turtle.pensize(20)
+turtle.write("李松健")
+time.sleep(20)
